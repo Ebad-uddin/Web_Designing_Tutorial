@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Document</title>
+
+    <style>
+        /* 
+        selector{
+            property : value;
+        }
+        */
+        li{
+            color: burlywood;
+            background-color: brown;
+        }
+
+        table{
+            border: 2px solid #aca0a0;
+            background-color: rgb(0, 0, 0);
+            color:burlywood;
+            height: 200px;
+            width: 500px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        td{
+            border: 2px solid #b3a4a4;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- heading tags
+    h1,h2,h3,h4,h5,h6
+    -->
+    <!-- this is normal tag
+    <h1>
+        This is heading
+    </h1>
+    <h2>
+        This is heading
+    </h2>
+    <h3>
+        This is heading
+    </h3>
+    <h4>
+        This is heading
+    </h4>
+    <h5>
+        This is heading
+    </h5>
+    <h6>
+        This is heading
+    </h6>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus deleniti provident tenetur voluptate laudantium doloribus excepturi at, perspiciatis perferendis odit autem modi enim repudiandae distinctio ad, doloremque ea facere.</p> -->
+
+    <!--
+        element: start tag and end tag with some content
+        Attribute: attribute defines the extra information regarding an element
+
+        standalone tag: jiska closing tag nh hota
+
+        absolute path: complete address and not present in the root directory
+        relative path: which are present in the root directory
+
+        list, tables, anchor 
+    
+        
+    
+    -->
+
+
+    <!-- <img src="images/mypic.jpg" alt="" height="600px" width="400px">
+    <img src="data:image/jpeg;base64,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" alt="" height="600px" width="400px"> -->
+
+
+<!-- 
+unorder list <ul>
+    list item <li>
+order list
+
+
+ -->
+<!-- <ul>
+   <li style="color: brown;">apple</li> 
+   <li style="color: aqua;">grapes</li> 
+   <li>mango</li> 
+   <li>banana</li> 
+
+</ul> -->
+<ol>
+   <li>apple</li> 
+   <li>grapes</li> 
+   <li>mango</li> 
+   <li>banana</li> 
+
+</ol>
+
+<!-- anchor tags -->
+
+<a href="about.html" style="font-size: 40px;">About page</a>
+
+
+
+<!-- table -->
+
+<!-- <table style="text-align: center;color: aqua;background-color: blueviolet; height: 200px; width: 500px; border-width:2px; border-style: solid; border-color: rgb(204, 185, 185);" >
+
+<thead style="border-width:2px; border-style: solid; border-color: black;">
+    <tr style="border-width:2px; border-style: solid; border-color: black;">
+        <td style="border-width:2px; border-style: solid; border-color: black;">ID</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Name</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Email</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Gender</td>
+    </tr>
+</thead>
+<tbody style="border-width:2px; border-style: solid; border-color: black;">
+    <tr>
+        <td style="border-width:2px; border-style: solid; border-color: black;">1</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Ali</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">ali@gmail.com</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Male</td>
+    </tr>
+    <tr>
+        <td style="border-width:2px; border-style: solid; border-color: black;">1</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Ali</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">ali@gmail.com</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Male</td>
+    </tr>
+    <tr>
+        <td style="border-width:2px; border-style: solid; border-color: black;">1</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Ali</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">ali@gmail.com</td>
+        <td style="border-width:2px; border-style: solid; border-color: black;">Male</td>
+    </tr>
+</tbody>
+
+
+</table> -->
+
+
+
+<!-- CSS 
+Casecading style sheet 
+types of css
+
+1) internal Css
+embed within the html document
+
+2) external css
+link within the html document
+
+3) inline css
+used to style the specific line in a html document
+-->
+
+
+<!-- for implementing internal css -->
+
+<table>
+
+    <thead >
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Gender</td>
+        </tr>
+    </thead>
+    <tbody >
+        <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>ali@gmail.com</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>ali@gmail.com</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>ali@gmail.com</td>
+            <td>Male</td>
+        </tr>
+    </tbody>
+    
+    
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
